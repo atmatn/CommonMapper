@@ -31,7 +31,7 @@ public class Data_tree_items {
     private String executable_perms;//(json array) (for type = 'folder', 'direct-link', 'args-script')
     @Column
     private Long parent;
-    @Column(name="linkUrl")//制定列名
+    @Column(name="linkUrl")//某些特殊字段要指定列名
     private String linkUrl;//(for type = 'direct-link')
     @Column(name="scriptId")
     private String scriptId;//(for type = 'args-script')
